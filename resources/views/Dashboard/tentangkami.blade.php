@@ -114,6 +114,7 @@
                 <li><a href="{{ route('dashboard.nasabah') }}" class="hover:text-hulk">Beranda</a></li>
                 <li><a href="{{ route('kelola.sampah') }}" class="hover:text-hulk">Kelola Sampah</a></li>
                 <li><a href="{{ route('kreasi') }}" class="hover:text-hulk">Kreasi</a></li>
+              	<li><a href="{{ route('kreasiku') }}" class="hover:text-hulk">Kreasiku</a></li>
                 <li><a href="{{ route('tentang.kami') }}" class="hover:text-hulk">Tentang Kami</a></li>
                 <li><a href="{{ route('profile.nasabah') }}" class="hover:text-hulk">Profil</a></li>
                 <li>
@@ -308,7 +309,7 @@
                 <div class="flex flex-col items-center h-[300px] bg-gradient-to-b from-krem to-birumuda border-none shadow-lg p-3 rounded hover:shadow-2xl">
                     <img src="{{ asset('images/velizha.png') }}" alt="Member" class="w-36 h-36 rounded-lg object-cover">
                     <h3 class="mt-4 text-xl font-semibold text-gray-800">Velizha Sandy Kusuma</h3>
-                    <p class="text-gray-600">Data Analyst</p>
+                    <p class="text-gray-600">Data Science</p>
                     <p class="text-gray-600 font-semibold">Universitas Amikom Purwokerto</p>
                 </div>
                 </a>
@@ -316,7 +317,7 @@
                 <div class="flex flex-col items-center h-[300px] bg-gradient-to-b from-krem to-birumuda border-none shadow-lg p-3 rounded hover:shadow-2xl">
                     <img src="{{ asset('images/danu.png') }}" alt="Member" class="w-36 h-36 rounded-lg object-cover">
                     <h3 class="mt-4 text-xl font-semibold text-gray-800">Muhammad Danu</h3>
-                    <p class="text-gray-600">Data Analyst</p>
+                    <p class="text-gray-600">Data Science</p>
                     <p class="text-gray-600 font-semibold">Universitas Negeri Surabaya</p>
                 </div>
                 </a>

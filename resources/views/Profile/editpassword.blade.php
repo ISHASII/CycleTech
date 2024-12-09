@@ -118,6 +118,7 @@
                 <li><a href="{{ route('dashboard.nasabah') }}" class="hover:text-hulk">Beranda</a></li>
                 <li><a href="{{ route('kelola.sampah') }}" class="hover:text-hulk">Kelola Sampah</a></li>
                 <li><a href="{{ route('kreasi') }}" class="hover:text-hulk">Kreasi</a></li>
+              	<li><a href="{{ route('kreasiku') }}" class="hover:text-hulk">Kreasiku</a></li>
                 <li><a href="{{ route('tentang.kami') }}" class="hover:text-hulk">Tentang Kami</a></li>
                 <li><a href="{{ route('profile.nasabah') }}" class="hover:text-hulk">Profil</a></li>
                 <li>
@@ -131,7 +132,7 @@
             </ul>
     </nav>
 
-    <!-- Modal -->
+    <!-- Modal logout -->
     <div id="logoutModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50">
         <div class="bg-white rounded-lg shadow-lg max-w-sm w-full p-6">
             <h2 class="text-lg font-semibold text-gray-800">Konfirmasi Logout</h2>
@@ -249,13 +250,44 @@
                     <button type="submit" class="px-6 py-2 bg-hulk text-white rounded-full hover:bg-old-hulk font-semibold">
                         Ubah
                     </button>
-                    <a href="{{ route('profile.keamanan') }}" class="px-6 py-2 border-2 border-red-500 text-red-600 rounded-full hover:bg-red-500 font-semibold hover:text-white">
-                        Batalkan
+                    <a href="{{ route('profile.keamanan') }}" id="backButton" class="px-6 py-2 border-2 border-old-hulk text-hulk rounded-full hover:bg-old-hulk font-semibold hover:text-white">
+                        Kembali
                     </a>
                 </div>
             </form>
         </div>
     </section>
+  
+  	<script>
+    // Variabel untuk memantau apakah form telah diubah
+    let isFormChanged = false;
+
+    // Tambahkan event listener pada semua input di dalam form
+    document.querySelectorAll('form input').forEach(input => {
+        input.addEventListener('input', function () {
+            isFormChanged = true; // Tandai bahwa form telah diubah
+        });
+    });
+
+    // Tombol "Kembali"
+    document.getElementById('backButton').addEventListener('click', function (event) {
+        // Mencegah navigasi default
+        event.preventDefault();
+
+        if (isFormChanged) {
+            // Jika form telah diubah, tampilkan konfirmasi
+            const userConfirmed = confirm('Apakah Anda yakin ingin kembali tanpa menyimpan perubahan?');
+            if (userConfirmed) {
+                // Jika pengguna setuju, navigasikan ke halaman target
+                window.location.href = this.href;
+            }
+        } else {
+            // Jika form tidak diubah, navigasikan langsung
+            window.location.href = this.href;
+        }
+    });
+
+  </script>
 
     <!-- Footer -->
     <section>

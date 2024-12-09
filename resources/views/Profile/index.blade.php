@@ -117,6 +117,7 @@
                 <li><a href="{{ route('dashboard.nasabah') }}" class="hover:text-hulk">Beranda</a></li>
                 <li><a href="{{ route('kelola.sampah') }}" class="hover:text-hulk">Kelola Sampah</a></li>
                 <li><a href="{{ route('kreasi') }}" class="hover:text-hulk">Kreasi</a></li>
+              	<li><a href="{{ route('kreasiku') }}" class="hover:text-hulk">Kreasiku</a></li>
                 <li><a href="{{ route('tentang.kami') }}" class="hover:text-hulk">Tentang Kami</a></li>
                 <li><a href="{{ route('profile.nasabah') }}" class="hover:text-hulk">Profil</a></li>
                 <li>

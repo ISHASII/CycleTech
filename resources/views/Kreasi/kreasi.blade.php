@@ -131,6 +131,7 @@
                 <li><a href="{{ route('dashboard.nasabah') }}" class="hover:text-hulk">Beranda</a></li>
                 <li><a href="{{ route('kelola.sampah') }}" class="hover:text-hulk">Kelola Sampah</a></li>
                 <li><a href="{{ route('kreasi') }}" class="hover:text-hulk">Kreasi</a></li>
+              	<li><a href="{{ route('kreasiku') }}" class="hover:text-hulk">Kreasiku</a></li>
                 <li><a href="{{ route('tentang.kami') }}" class="hover:text-hulk">Tentang Kami</a></li>
                 <li><a href="{{ route('profile.nasabah') }}" class="hover:text-hulk">Profil</a></li>
                 <li>
@@ -207,7 +208,7 @@
 
     <!-- Kumpulan Kreasi -->
     <section class="bg-white py-16 mt-6">
-        <div class="container mx-auto text-center px-32">
+        <div class="container mx-auto text-center px-10">
             <h2 class="text-3xl font-bold text-gray-800">Kumpulan Kreasi</h2>
             <p class="text-gray-600 mt-4">Dapatkan inspirasi dan pengetahuan tentang cara mendaur ulang sampah menjadi produk yang bermanfaat.</p>
             <div id="kreasi-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
