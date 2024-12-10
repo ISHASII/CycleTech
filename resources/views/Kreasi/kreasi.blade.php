@@ -1,4 +1,21 @@
-<!DOCTYPE html>
+[22.24, 9/12/2024] ivan Rakamin UPN JATIM: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycle Tech</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo 2.png">
+    @vite('resources/css/app.css')
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script>
+        function toggleExtraCards() {
+            const moreButton = document.getElementById('moreButton');
+            const extraCards = document.getElementById('extraCards');
+
+            moreButton.addEventListener('click', function () {
+                extraCards.classList.toggle('hidden');
+                moreButton.textContent = extraCards.classList.contains('hidden…
+[23.11, 9/12/2024] ivan Rakamin UPN JATIM: <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -108,15 +125,14 @@
                     </li>
 
                     <!-- Profile Icon (only visible on larger screens) -->
-                    <li class="hidden lg:flex items-center">
+                    <li class="hidden lg:flex items-center w-10 h-10 rounded-full border overflow-hidden">
                         <a href="{{ route('profile.nasabah') }}">
                             <img src="{{ auth('nasabah')->check() && auth('nasabah')->user()->photo ? asset('storage/' . auth('nasabah')->user()->photo) : 'https://via.placeholder.com/40' }}"
                             alt="Profile"
-                            class="w-10 h-10 rounded-full border border-gray-300">
-
+                            class="w-full h-full object-cover overflow-hidden">
                         </a>
                     </li>
-                    
+
                     <!-- logout -->
                     <li class="hidden lg:flex items-center">
                         <button id="logoutButton" type="button" class="text-gray-600 hover:text-red-600 focus:outline-none">
@@ -229,7 +245,7 @@
             <div class="flex flex-row gap-6 justify-center items-center">
                 <button id="load-more" class="mt-8 w-[150px] bg-hulk text-white px-4 py-2 rounded-lg hover:bg-old-hulk">Lebih Banyak</button>
                 <button id="load-less" class="mt-8 w-[150px] bg-hulk text-white px-4 py-2 rounded-lg hover:bg-old-hulk" style="display: none;">Lebih Sedikit</button>
-            </div>   
+            </div>
         </div>
     </section>
 
