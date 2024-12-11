@@ -12,7 +12,7 @@ class PredictionController extends Controller
     {
         // Validasi input file
         $request->validate([
-            'image' => 'required|file|mimes:jpeg,png,jpg|max:2048', // Maksimal ukuran file 2MB
+            'image' => 'required|file|mimes:jpeg,jpg|max:2048', // Maksimal ukuran file 2MB
         ]);
 
         try {
