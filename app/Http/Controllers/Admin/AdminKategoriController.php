@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\KategoriSampah;
 use Illuminate\Http\Request;
 
-class adminKategoriController extends Controller
+class AdminKategoriController extends Controller
 {
     /**
      * Menampilkan daftar kategori sampah.
@@ -15,7 +15,7 @@ class adminKategoriController extends Controller
     {
         // Mengambil semua kategori dengan pagination
         $categories = KategoriSampah::paginate(10); // Pagination untuk menampilkan data per halaman
-        return view('admin.categories.index', compact('categories'));
+        return view('Admin.categories.index', compact('categories'));
     }
 
     /**
@@ -24,7 +24,7 @@ class adminKategoriController extends Controller
     public function create()
     {
         // Mengarahkan ke view tambah.blade.php
-        return view('admin.categories.tambah');
+        return view('Admin.categories.tambah');
     }
 
     /**
@@ -54,7 +54,7 @@ class adminKategoriController extends Controller
     {
         // Cari kategori berdasarkan ID
         $category = KategoriSampah::findOrFail($id);
-        return view('admin.categories.edit', compact('category'));
+        return view('Admin.categories.edit', compact('category'));
     }
 
     /**

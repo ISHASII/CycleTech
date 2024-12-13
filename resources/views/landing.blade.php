@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CycleTech</title>
     <link rel="icon" type="image/x-icon" href="/images/logo 2.png">
+  	<link rel="shortcut icon" href="/images/logo 2.png" type="image/x-icon">
+    <meta property="og:image" content="https://cycletech.site/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CycleTech">
+    <meta property="og:description" content="Cycle Tech adalah solusi cerdas untuk pengelolaan sampah Anda. Kami menyediakan platform lengkap yang tidak hanya mengedukasi, tetapi juga menginspirasi pengelolaan sampah secara kreatif. Dengan fitur deteksi jenis sampah otomatis, Anda dapat mengunggah gambar sampah dan mendapatkan rekomendasi kreasi menarik yang dapat dibuat dari limbah tersebut.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     @vite('resources/css/app.css')
 </head>
@@ -214,35 +219,27 @@
         </div>
     </section>
 
-    <!-- Footer -->
+     <!-- Footer -->
     <section id="kontak">
     <footer class="bg-gradient-to-t from-birumuda to-krem py-10">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center md:px-32 px-24">
-            <div class="md:w-1/3 mb-6 md:mb-0">
-                <div class="flex items-center">
+        <div class="container mx-auto flex flex-col justify-between items-center xl:px-64 px-24 lg:px-56">
+            <div class="mb-6 md:mb-0">
+                <div class="flex items-center justify-center">
                     <img src="{{ asset('images/logo 2.png') }}" alt="Cycle Tech Logo" class="w-10 h-10 mr-3">
                     <h2 class="text-lg font-bold text-hulk">Cycle Tech</h2>
                 </div>
-                <p class="mt-4 text-sm hidden md:block">
-                    Cycle Tech adalah platform inovatif untuk pengelolaan sampah. Dengan fitur-fitur canggih, kami memudahkan Anda untuk memilah, mengelola, dan mendaur ulang sampah secara efektif.
+                <p class="mt-4 text-sm text-center md:block">
+                    Cycle Tech adalah platform inovatif untuk pengelolaan sampah. </br>
+                  	Dengan fitur-fitur canggih, kami memudahkan Anda untuk memilah, mengelola, dan mendaur ulang sampah secara efektif.
                 </p>
-            </div>
-
-            <div class="md:w-1/3 mb-6 md:mb-0 text-center">
-                <h3 class="text-lg font-semibold mb-2">Hubungi</h3>
-                <p class="text-sm">+62 812 3456 7890</p>
-                <p class="text-sm">cycletech@gmail.com</p>
-            </div>
-            <div class="md:w-1/3 text-center md:text-right">
-                <h3 class="text-lg font-semibold mb-2">Media Sosial</h3>
-                <div class="flex justify-center md:justify-end space-x-4">
-                    <a href="#" class="text-black hover:text-gray-400">
-                        <i class="bi bi-facebook w-6 h-6"></i>
+                <div class="flex justify-center mt-6 space-x-4">
+                    <a href="http://wa.me/+6289662348943" target="_blank" class="text-black hover:text-gray-400">
+                        <i class="bi bi-telephone-fill"></i>
                     </a>
-                    <a href="#" class="text-black hover:text-gray-400">
-                        <i class="bi bi-twitter w-6 h-6"></i>
+                    <a href="mailto:cycletech05@gmail.com" target="_blank" class="text-black hover:text-gray-400">
+                        <i class="bi bi-envelope-fill"></i>
                     </a>
-                    <a href="#" class="text-black hover:text-gray-400">
+                    <a href="https://www.instagram.com/cycletech.site?igsh=MXhhNGJqMWZoZ21iZA==" target="_blank" class="text-black hover:text-gray-400">
                         <i class="bi bi-instagram w-6 h-6"></i>
                     </a>
                 </div>
@@ -253,6 +250,6 @@
         </div>
     </footer>
     </section>
-</body>
-
+  
+  </body>
 </html>

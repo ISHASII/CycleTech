@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Kreasi;
 
-class adminKreasiController extends Controller
+class AdminKreasiController extends Controller
 {
     // Menampilkan daftar kreasi
     public function index()
@@ -14,7 +14,7 @@ class adminKreasiController extends Controller
 
         $kreasis = Kreasi::paginate(5); // Menampilkan 5 data per halaman
         // Kirim data ke view
-        return view('admin.Kreasi.index', compact('kreasis'));
+        return view('Admin.kreasi.index', compact('kreasis'));
     }
 
     // Menghapus kreasi berdasarkan ID

@@ -8,9 +8,4 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-
-    build: {
-        outDir: "dist", // Ganti output ke "dist"
-        emptyOutDir: true, // Bersihkan folder dist sebelum build baru
-    },
 });

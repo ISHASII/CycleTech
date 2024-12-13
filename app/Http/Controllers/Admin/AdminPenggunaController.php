@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Nasabah;
 use Illuminate\Http\Request;
 
-class adminPenggunaController extends Controller
+class AdminPenggunaController extends Controller
 {
     /**
      * Menampilkan daftar pengguna (nasabah).
@@ -28,8 +28,8 @@ class adminPenggunaController extends Controller
             })
             ->paginate(10); // Menampilkan 10 data per halaman
 
-        // Mengirim data ke view 'Admin.DataUser.index'
-        return view('Admin.DataUser.index', compact('nasabah', 'search'));
+        // Mengirim data ke view 'Admin.datauser.index'
+        return view('Admin.datauser.index', compact('nasabah', 'search'));
     }
 
     /**

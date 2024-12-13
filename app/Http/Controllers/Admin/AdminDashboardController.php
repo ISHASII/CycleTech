@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Nasabah;
 use App\Models\Kreasi;
 
-class adminDashboardController extends Controller
+class AdminDashboardController extends Controller
 {
     public function index()
     {
@@ -16,6 +16,6 @@ class adminDashboardController extends Controller
         $totalKreasi = Kreasi::count();
 
         // Mengirim data ke tampilan
-        return view('admin.Dashboard.index', compact('totalPengguna', 'totalKreasi'));
+        return view('Admin.dashboard.index', compact('totalPengguna', 'totalKreasi'));
     }
 }

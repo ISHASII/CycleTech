@@ -8,12 +8,12 @@ use App\Models\Notification; // Tambahkan model Notification
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
-class adminArtikelController extends Controller
+class AdminArtikelController extends Controller
 {
     public function index()
     {
         $articles = Artikel::latest()->paginate(5);
-        return view('Admin.Artikel.index', compact('articles'));
+        return view('Admin.artikel.index', compact('articles'));
     }
 
     public function store(Request $request)
@@ -53,7 +53,7 @@ class adminArtikelController extends Controller
     public function edit($id)
     {
         $artikel = Artikel::findOrFail($id);
-        return view('Admin.Artikel.edit', compact('artikel'));
+        return view('Admin.artikel.edit', compact('artikel'));
     }
 
     public function update(Request $request, $id)

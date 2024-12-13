@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Admin;
 
-class adminDataAdminController extends Controller
+class AdminDataAdminController extends Controller
 {
     public function index(Request $request)
     {
@@ -16,7 +16,7 @@ class adminDataAdminController extends Controller
                          ->orWhere('email', 'like', "%{$search}%");
         })->paginate(10);
 
-        return view('Admin.DataAdmin.index', compact('admins'));
+        return view('Admin.dataadmin.index', compact('admins'));
     }
 
     public function edit($id)
@@ -25,7 +25,7 @@ class adminDataAdminController extends Controller
         $admin = Admin::findOrFail($id);
 
         // Kirim data admin ke view edit.blade.php
-        return view('Admin.DataAdmin.edit', compact('admin'));
+        return view('Admin.dataadmin.edit', compact('admin'));
     }
 
     public function update(Request $request, $id)

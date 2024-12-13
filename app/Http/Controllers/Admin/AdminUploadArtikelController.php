@@ -5,11 +5,11 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class adminAddCategoriesController extends Controller
+class AdminUploadArtikelController extends Controller
 {
     //
     public function index()
     {
-        return view('admin.categories.tambah');
+        return view('Admin.artikel.upload');
     }
 }
