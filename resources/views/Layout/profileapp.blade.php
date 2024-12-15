@@ -8,7 +8,11 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     @vite('resources/css/app.css')
+<<<<<<< HEAD
     <link rel="icon" type="image/x-icon" href="/images/logo 2.webp">
+=======
+    <link rel="icon" type="image/x-icon" href="/images/logo 2.png">
+>>>>>>> 8fcbca0a90afe9395a317b845ac72dde2e131c71
 </head>
 
 <body class="bg-blue-50 min-h-screen flex flex-col">
@@ -16,7 +20,11 @@
         <div class="container mx-auto flex items-center justify-between py-4 px-6 md:px-10">
             <!-- Logo -->
             <div class="flex items-center space-x-3">
+<<<<<<< HEAD
                 <img src="{{ asset('images/logo 2.webp') }}" alt="Logo" class="w-10 h-10 rounded-full">
+=======
+                <img src="{{ asset('images/logo 2.png') }}" alt="Logo" class="w-10 h-10 rounded-full">
+>>>>>>> 8fcbca0a90afe9395a317b845ac72dde2e131c71
                 <h1 class="text-xl font-semibold text-hulk">Cycle Tech</h1>
             </div>
 
@@ -193,10 +201,17 @@
     <!-- Footer -->
     <section class="mt-auto">
     <footer class="bg-gradient-to-b from-birumuda to-krem py-10">
+<<<<<<< HEAD
         <div class="container mx-auto flex flex-col justify-between items-center xl:px-64 px-8 lg:px-56">
             <div class="mb-6 md:mb-0">
                 <div class="flex items-center justify-center">
                     <img src="{{ asset('images/logo 2.webp') }}" alt="Cycle Tech Logo" class="w-10 h-10 mr-3">
+=======
+        <div class="container mx-auto flex flex-col justify-between items-center xl:px-64 px-24 lg:px-56">
+            <div class="mb-6 md:mb-0">
+                <div class="flex items-center justify-center">
+                    <img src="{{ asset('images/logo 2.png') }}" alt="Cycle Tech Logo" class="w-10 h-10 mr-3">
+>>>>>>> 8fcbca0a90afe9395a317b845ac72dde2e131c71
                     <h2 class="text-lg font-bold text-hulk">Cycle Tech</h2>
                 </div>
                 <p class="mt-4 text-sm text-center md:block">

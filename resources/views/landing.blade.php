@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CycleTech</title>
+<<<<<<< HEAD
     <link rel="icon" type="image/x-icon" href="/images/logo 2.webp">
   	<link rel="shortcut icon" href="/images/logo 2.webp" type="image/x-icon">
     <meta property="og:image" content="https://cycletech.site/">
@@ -12,6 +13,14 @@
     <meta property="og:title" content="CycleTech">
     <meta property="og:description" content="Cycle Techf adalah solusi cerdas untuk pengelolaan sampah Anda. Kami menyediakan platform lengkap yang tidak hanya mengedukasi, tetapi juga menginspirasi pengelolaan sampah secara kreatif. Dengan fitur deteksi jenis sampah otomatis, Anda dapat mengunggah gambar sampah dan mendapatkan rekomendasi kreasi menarik yang dapat dibuat dari limbah tersebut.">
   	<meta name="google-site-verification" content="vpBr6Qkf4ksqLG4Zpt_lpuXMOm4d5wSaSwqDVEUN14I" />
+=======
+    <link rel="icon" type="image/x-icon" href="/images/logo 2.png">
+  	<link rel="shortcut icon" href="/images/logo 2.png" type="image/x-icon">
+    <meta property="og:image" content="https://cycletech.site/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CycleTech">
+    <meta property="og:description" content="Cycle Tech adalah solusi cerdas untuk pengelolaan sampah Anda. Kami menyediakan platform lengkap yang tidak hanya mengedukasi, tetapi juga menginspirasi pengelolaan sampah secara kreatif. Dengan fitur deteksi jenis sampah otomatis, Anda dapat mengunggah gambar sampah dan mendapatkan rekomendasi kreasi menarik yang dapat dibuat dari limbah tersebut.">
+>>>>>>> 8fcbca0a90afe9395a317b845ac72dde2e131c71
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     @vite('resources/css/app.css')
 </head>
@@ -226,7 +235,11 @@
         <div class="container mx-auto flex flex-col justify-between items-center xl:px-64 px-24 lg:px-56">
             <div class="mb-6 md:mb-0">
                 <div class="flex items-center justify-center">
+<<<<<<< HEAD
                     <img src="{{ asset('images/logo 2.webp') }}" alt="Cycle Tech Logo" class="w-10 h-10 mr-3">
+=======
+                    <img src="{{ asset('images/logo 2.png') }}" alt="Cycle Tech Logo" class="w-10 h-10 mr-3">
+>>>>>>> 8fcbca0a90afe9395a317b845ac72dde2e131c71
                     <h2 class="text-lg font-bold text-hulk">Cycle Tech</h2>
                 </div>
                 <p class="mt-4 text-sm text-center md:block">
