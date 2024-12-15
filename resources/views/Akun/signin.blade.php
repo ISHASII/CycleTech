@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cycle Tech Registration</title>
-    <link rel="icon" type="image/x-icon" href="/images/logo 2.png">
+    <link rel="icon" type="image/x-icon" href="/images/logo 2.webp">
     @vite('resources/css/app.css')
 </head>
 <body class="bg-gradient-to-b from-birumuda to-krem flex min-h-screen">
 
     <!-- Left Side -->
     <div class="w-2/3 hidden lg:block overflow-hidden h-screen">
-        <img src="{{ asset('images/signin.png') }}" alt="Recycle Symbol" class="object-cover w-full h-full">
+        <img src="{{ asset('images/signin.webp') }}" alt="Recycle Symbol" class="object-cover w-full h-full">
     </div>
 
     <!-- Right Side -->
     <div class="lg:w-1/3 w-full p-8 flex flex-col justify-center relative">
         <div class="text-center mb-8">
-            <img src="{{ asset('images/logo.png') }}" alt="Cycle Tech Logo" class="mx-auto mb-4">
+            <img src="{{ asset('images/logo.webp') }}" alt="Cycle Tech Logo" class="mx-auto mb-4">
             <h2 class="text-2xl font-bold">Buat Akun</h2>
             <p class="text-gray-600">Ayo bergabung dan jadi bagian dari penyelamatan bumi!</p>
         </div>
